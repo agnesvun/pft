@@ -1,5 +1,6 @@
 # pft
 
+Help message:
 ```
 $ uv run pft --help
                                                                                                
@@ -19,4 +20,19 @@ $ uv run pft --help
 │ summarize                                                                                   │
 │ analyze                                                                                     │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────╯
+```
+
+Help message for a certain command for usage:
+```
+$ uv run pft add --help
+                                                                                                                                           
+ Usage: pft add [OPTIONS]                                                                                                                  
+                                                                                                                                           
+╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ *  --desc            <str>  Transaction description [required]                                                                          │
+│ *  --amt             <str>  Transaction amount, positive as income, negative as expense, rounded to the nearest cent [required]         │
+│    --date            <str>  YYYY-MM-DD, default as today                                                                                │
+│    --category        <str>  Optional category                                                                                           │
+│    --help                   Show this message and exit.                                                                                 │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
